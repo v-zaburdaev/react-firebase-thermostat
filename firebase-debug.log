@@ -1,0 +1,106 @@
+[debug] [2017-11-17T13:26:34.220Z] ----------------------------------------------------------------------
+[debug] [2017-11-17T13:26:34.224Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vzabu\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-11-17T13:26:34.224Z] CLI Version:   3.15.0
+[debug] [2017-11-17T13:26:34.225Z] Platform:      win32
+[debug] [2017-11-17T13:26:34.225Z] Node Version:  v8.9.0
+[debug] [2017-11-17T13:26:34.275Z] Time:          Fri Nov 17 2017 16:26:34 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:34.275Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-17T13:26:34.459Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-17T13:26:34.460Z] > authorizing via signed-in user
+[debug] [2017-11-17T13:26:34.465Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thermostat-7f419  
+ Fri Nov 17 2017 16:26:34 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:35.450Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:26:35.451Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thermostat-7f419/tokens  
+ Fri Nov 17 2017 16:26:35 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:36.206Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'thermostat-7f419'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2017-11-17T13:26:37.689Z] >>> HTTP REQUEST PUT https://thermostat-7f419.firebaseio.com/.settings/rules.json?dryRun=true {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+ 
+ Fri Nov 17 2017 16:26:37 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:38.398Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database thermostat-7f419 is valid
+[debug] [2017-11-17T13:26:38.403Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^4.6.2",
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1"
+  },
+  "private": true,
+  "devDependencies": {}
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-11-17T13:26:38.405Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/thermostat-7f419?view=CONSUMER_VIEW  
+ Fri Nov 17 2017 16:26:38 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:38.406Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/thermostat-7f419?view=CONSUMER_VIEW  
+ Fri Nov 17 2017 16:26:38 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:39.618Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-11-17T13:26:39.668Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-11-17T13:26:39.671Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/thermostat-7f419  
+ Fri Nov 17 2017 16:26:39 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:39.671Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/thermostat-7f419/apiKeys  
+ Fri Nov 17 2017 16:26:39 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:26:40.664Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:26:40.725Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2017-11-17T13:27:19.336Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/thermostat-7f419/configs  
+ Fri Nov 17 2017 16:27:19 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:27:20.554Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:28:30.759Z] ----------------------------------------------------------------------
+[debug] [2017-11-17T13:28:30.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vzabu\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions,hosting
+[debug] [2017-11-17T13:28:30.762Z] CLI Version:   3.15.0
+[debug] [2017-11-17T13:28:30.762Z] Platform:      win32
+[debug] [2017-11-17T13:28:30.762Z] Node Version:  v8.9.0
+[debug] [2017-11-17T13:28:30.763Z] Time:          Fri Nov 17 2017 16:28:30 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:30.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-17T13:28:30.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-17T13:28:30.780Z] > authorizing via signed-in user
+[debug] [2017-11-17T13:28:30.783Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/thermostat-7f419  
+ Fri Nov 17 2017 16:28:30 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:31.778Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:28:31.779Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/thermostat-7f419/tokens  
+ Fri Nov 17 2017 16:28:31 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:32.930Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\vzabu\workspace\firebase-react\firebase-react'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-11-17T13:28:33.426Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/thermostat-7f419  
+ Fri Nov 17 2017 16:28:33 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:33.426Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/thermostat-7f419/apiKeys  
+ Fri Nov 17 2017 16:28:33 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:33.427Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/thermostat-7f419  
+ Fri Nov 17 2017 16:28:33 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:34.382Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:28:34.456Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:28:34.470Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-17T13:28:34.470Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/440996268510/clients/_:getWebAppConfig  
+ Fri Nov 17 2017 16:28:34 GMT+0300 (RTZ 2 (зима))
+[debug] [2017-11-17T13:28:35.074Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] +  functions: app: http://localhost:5001/thermostat-7f419/us-central1/app
